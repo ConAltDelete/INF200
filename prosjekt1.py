@@ -10,7 +10,6 @@ def spill_runde():
 		while len(deck_round) != 0:
 			if all([board_array[k] == k+1 for k in range(13)]):
 				antall_win += 1
-				print("WIN!")
 				break
 			elif board_array[i%13] != i%13 + 1:
 				board_array[i%13] = deck_round.pop(0)
